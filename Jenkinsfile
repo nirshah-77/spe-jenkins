@@ -3,12 +3,12 @@ agent any
     stages {
         stage('Build Code') {
             steps {
-                sh "python3 prog1.py"
+                bat "python3 prog1.py"
                 }
         }
        stage('Test Code') {
             steps {
-                sh "python3 Test.py"
+                bat "python3 Test.py"
             }
         }
     }
